@@ -1,16 +1,7 @@
-# Compiled class file
+##########################
+# Java & Compiled Files #
+##########################
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,7 +9,115 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+##########################
+# Maven Build Files      #
+##########################
+target/
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.flattened-pom.xml
+
+##########################
+# Logs                   #
+##########################
+*.log
+*.log.*
+logs/
+*.out
+
+##########################
+# IDE Files - IntelliJ   #
+##########################
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+*.swp
+*.swo
+
+##########################
+# IDE Files - Eclipse    #
+##########################
+.project
+.classpath
+.settings/
+.metadata/
+.recommenders/
+bin/
+tmp/
+*.tmp
+*.bak
+local.properties
+
+##########################
+# IDE Files - VS Code    #
+##########################
+.vscode/
+*.code-workspace
+
+##########################
+# IDE Files - NetBeans   #
+##########################
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+##########################
+# OS Files - macOS       #
+##########################
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+##########################
+# OS Files - Windows     #
+##########################
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+##########################
+# OS Files - Linux       #
+##########################
+*~
+.directory
+.Trash-*
+
+##########################
+# Backup & Temp Files    #
+##########################
+*.orig
+*.rej
+*.swp
+*.swo
+*.bak
+*.backup
+*.tmp
+*~
+.#*
+\#*#
