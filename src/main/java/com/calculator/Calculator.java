@@ -114,6 +114,10 @@ public class Calculator {
         double quotient = calc.divide(10, 5);
         System.out.println("10 / 5 = " + quotient);
         
+        // Power
+        double power = calc.power(2, 3);
+        System.out.println("2 ^ 3 = " + power);
+        
         System.out.println("\nAll operations completed successfully!");
     }
 }

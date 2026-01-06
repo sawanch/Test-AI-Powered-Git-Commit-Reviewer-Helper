@@ -89,6 +89,27 @@ Expand `CalculatorTest.java` with additional test cases
 **Scenario 6: Refactor code**  
 Rename methods, extract helper functions, improve code structure
 
+## Features
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Power calculation
+- Square root
+- Percentage calculation
+
+## Usage
+
+The calculator now includes a power operation. You can use the `power(base, exponent)` method to calculate exponentiation. For example:
+
+```java
+double result = calc.power(2, 3); // result will be 8.0
+```
+
 ## License
 
 This is a test project for educational purposes.
+
+## Features / Changelog
+- **2026-01-06 15:00**: feat: add power operation to Calculator
