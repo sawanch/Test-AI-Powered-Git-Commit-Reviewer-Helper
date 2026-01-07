@@ -1,19 +1,20 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class CalculatorTest {
+class CalculatorTest {
 
     @Test
-    public void testPower() {
+    void testAverage() {
         Calculator calc = new Calculator();
-        double result = calc.power(2, 3);
-        assertEquals(8.0, result);
+        assertEquals(30.0, calc.average(10, 20, 30, 40, 50));
+        assertThrows(IllegalArgumentException.class, () -> calc.average());
     }
 
     @Test
-    public void testPowerWithNegativeExponent() {
+    void testFactorial() {
         Calculator calc = new Calculator();
-        double result = calc.power(2, -3);
-        assertEquals(0.125, result);
+        assertEquals(120, calc.factorial(5));
+        assertThrows(IllegalArgumentException.class, () -> calc.factorial(-1));
+        assertThrows(IllegalArgumentException.class, () -> calc.factorial(21));
     }
 }

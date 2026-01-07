@@ -90,6 +90,45 @@ public class Calculator {
     }
 
     /**
+     * Calculates the average of a set of numbers.
+     *
+     * @param numbers the numbers to average
+     * @return the average of the numbers
+     * @throws IllegalArgumentException if no numbers are provided
+     */
+    public double average(double... numbers) {
+        if (numbers.length == 0) {
+            throw new IllegalArgumentException("At least one number is required to calculate average");
+        }
+        double sum = 0;
+        for (double num : numbers) {
+            sum += num;
+        }
+        return sum / numbers.length;
+    }
+
+    /**
+     * Calculates the factorial of a non-negative integer.
+     *
+     * @param n the non-negative integer
+     * @return the factorial of n
+     * @throws IllegalArgumentException if n is negative or too large
+     */
+    public long factorial(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Factorial is not defined for negative numbers");
+        }
+        if (n > 20) {
+            throw new IllegalArgumentException("Factorial of numbers greater than 20 exceeds long capacity");
+        }
+        long result = 1;
+        for (int i = 2; i <= n; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    /**
      * Main method to demonstrate calculator functionality.
      */
     public static void main(String[] args) {
@@ -117,6 +156,14 @@ public class Calculator {
         // Power
         double power = calc.power(2, 3);
         System.out.println("2 ^ 3 = " + power);
+        
+        // Average
+        double avg = calc.average(10, 20, 30, 40, 50);
+        System.out.println("Average of (10, 20, 30, 40, 50) = " + avg);
+        
+        // Factorial
+        long fact = calc.factorial(5);
+        System.out.println("5! = " + fact);
         
         System.out.println("\nAll operations completed successfully!");
     }

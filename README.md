@@ -12,6 +12,8 @@ This project contains a basic calculator implementation with the following featu
 - Power calculation
 - Square root
 - Percentage calculation
+- Average calculation
+- Factorial calculation
 
 This is intentionally kept simple as a helper project to generate meaningful commits for testing the AI-Powered-Git-Commit-Reviewer.
 
@@ -98,18 +100,36 @@ Rename methods, extract helper functions, improve code structure
 - Power calculation
 - Square root
 - Percentage calculation
+- Average calculation
+- Factorial calculation
 
 ## Usage
 
-The calculator now includes a power operation. You can use the `power(base, exponent)` method to calculate exponentiation. For example:
+The calculator now includes a power operation, an average calculation, and a factorial calculation. You can use the following methods:
 
-```java
-double result = calc.power(2, 3); // result will be 8.0
-```
+- **Power**: `power(base, exponent)` to calculate exponentiation.
+  ```java
+  double result = calc.power(2, 3); // result will be 8.0
+  ```
+
+- **Average**: `average(numbers...)` to calculate the average of a set of numbers.
+  ```java
+  double avg = calc.average(10, 20, 30, 40, 50); // avg will be 30.0
+  ```
+
+- **Factorial**: `factorial(n)` to calculate the factorial of a non-negative integer.
+  ```java
+  long fact = calc.factorial(5); // fact will be 120
+  ```
 
 ## License
 
 This is a test project for educational purposes.
 
 ## Features / Changelog
+- **2026-01-06 18:42**: feat: add average and factorial methods to Calculator class
 - **2026-01-06 15:00**: feat: add power operation to Calculator
+- **2026-01-07 10:00**: feat: add average and factorial methods to Calculator class
+  - Implemented average method to calculate the average of a set of numbers
+  - Added factorial method for non-negative integers with error handling
+  - Updated main method to demonstrate new functionalities
