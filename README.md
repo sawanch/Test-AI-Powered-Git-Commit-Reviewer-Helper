@@ -14,6 +14,8 @@ This project contains a basic calculator implementation with the following featu
 - Percentage calculation
 - Average calculation
 - Factorial calculation
+- Modulus calculation
+- Absolute value calculation
 
 This is intentionally kept simple as a helper project to generate meaningful commits for testing the AI-Powered-Git-Commit-Reviewer.
 
@@ -102,10 +104,12 @@ Rename methods, extract helper functions, improve code structure
 - Percentage calculation
 - Average calculation
 - Factorial calculation
+- Modulus calculation
+- Absolute value calculation
 
 ## Usage
 
-The calculator now includes a power operation, an average calculation, and a factorial calculation. You can use the following methods:
+The calculator now includes a power operation, an average calculation, a factorial calculation, a modulus calculation, and an absolute value calculation. You can use the following methods:
 
 - **Power**: `power(base, exponent)` to calculate exponentiation.
   ```java
@@ -122,14 +126,28 @@ The calculator now includes a power operation, an average calculation, and a fac
   long fact = calc.factorial(5); // fact will be 120
   ```
 
+- **Modulus**: `modulus(a, b)` to calculate the remainder of dividing `a` by `b`.
+  ```java
+  double remainder = calc.modulus(17, 5); // remainder will be 2.0
+  ```
+
+- **Absolute**: `absolute(number)` to return the absolute value of a number.
+  ```java
+  double absValue = calc.absolute(-42.5); // absValue will be 42.5
+  ```
+
 ## License
 
 This is a test project for educational purposes.
 
 ## Features / Changelog
+- **2026-01-08 00:11**: Enter your commit message (press Enter twice to finish, or 'cancel' to keep original):
 - **2026-01-06 18:42**: feat: add average and factorial methods to Calculator class
 - **2026-01-06 15:00**: feat: add power operation to Calculator
 - **2026-01-07 10:00**: feat: add average and factorial methods to Calculator class
   - Implemented average method to calculate the average of a set of numbers
   - Added factorial method for non-negative integers with error handling
   - Updated main method to demonstrate new functionalities
+- **2026-01-08 12:00**: feat: add modulus and absolute value methods to Calculator
+  - Implemented modulus method to calculate remainder of division
+  - Added absolute method to return the absolute value of a number

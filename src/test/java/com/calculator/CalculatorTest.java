@@ -1,20 +1,20 @@
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
-class CalculatorTest {
+public class CalculatorTest {
 
     @Test
-    void testAverage() {
+    public void testModulus() {
         Calculator calc = new Calculator();
-        assertEquals(30.0, calc.average(10, 20, 30, 40, 50));
-        assertThrows(IllegalArgumentException.class, () -> calc.average());
+        assertEquals(2.0, calc.modulus(17, 5));
+        assertThrows(ArithmeticException.class, () -> calc.modulus(17, 0));
     }
 
     @Test
-    void testFactorial() {
+    public void testAbsolute() {
         Calculator calc = new Calculator();
-        assertEquals(120, calc.factorial(5));
-        assertThrows(IllegalArgumentException.class, () -> calc.factorial(-1));
-        assertThrows(IllegalArgumentException.class, () -> calc.factorial(21));
+        assertEquals(42.5, calc.absolute(-42.5));
+        assertEquals(0.0, calc.absolute(0.0));
+        assertEquals(42.5, calc.absolute(42.5));
     }
 }

@@ -129,6 +129,31 @@ public class Calculator {
     }
 
     /**
+     * Calculates the modulus (remainder) of dividing a by b.
+     *
+     * @param a the dividend
+     * @param b the divisor
+     * @return the remainder of a divided by b
+     * @throws ArithmeticException if b is zero
+     */
+    public double modulus(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("Cannot perform modulus with zero divisor");
+        }
+        return a % b;
+    }
+
+    /**
+     * Returns the absolute value of a number.
+     *
+     * @param number the number
+     * @return the absolute value of the number
+     */
+    public double absolute(double number) {
+        return Math.abs(number);
+    }
+
+    /**
      * Main method to demonstrate calculator functionality.
      */
     public static void main(String[] args) {
@@ -164,6 +189,14 @@ public class Calculator {
         // Factorial
         long fact = calc.factorial(5);
         System.out.println("5! = " + fact);
+        
+        // Modulus
+        double remainder = calc.modulus(17, 5);
+        System.out.println("17 % 5 = " + remainder);
+        
+        // Absolute
+        double absValue = calc.absolute(-42.5);
+        System.out.println("|-42.5| = " + absValue);
         
         System.out.println("\nAll operations completed successfully!");
     }
